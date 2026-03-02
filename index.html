@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vend — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the Vend mobile application and related services." />
+  <style>
+    :root{
+      --bg: #0b0d12;
+      --card: #121624;
+      --text: #e8eaf2;
+      --muted: #b6bdd6;
+      --line: rgba(255,255,255,.08);
+      --accent: #7aa2ff;
+      --code: #0f1320;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 980px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f8fb;
+        --card:#ffffff;
+        --text:#141826;
+        --muted:#4c5878;
+        --line: rgba(20,24,38,.12);
+        --accent:#2f5bff;
+        --code:#f1f3ff;
+        --shadow: 0 10px 30px rgba(16,24,40,.10);
+      }
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(122,162,255,.18), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(122,162,255,.10), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a{color: var(--accent); text-decoration: none}
+    a:hover{text-decoration: underline}
+    .wrap{max-width: var(--max); margin: 0 auto; padding: 28px 18px 72px}
+    header{
+      display:flex; gap:16px; align-items:center; justify-content:space-between;
+      margin: 10px 0 18px;
+    }
+    .brand{
+      display:flex; gap:12px; align-items:center;
+    }
+    .logo{
+      width:42px; height:42px; border-radius: 12px;
+      background: linear-gradient(135deg, rgba(122,162,255,.95), rgba(122,162,255,.35));
+      box-shadow: var(--shadow);
+    }
+    .title h1{
+      font-size: 20px;
+      margin:0;
+      letter-spacing: .2px;
+    }
+    .title p{
+      margin:2px 0 0; color: var(--muted); font-size: 13px;
+    }
+    .actions{
+      display:flex; gap:10px; align-items:center;
+    }
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 10px 12px;
+      border:1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      cursor:pointer;
+      user-select:none;
+    }
+    .btn:hover{border-color: rgba(122,162,255,.45)}
+    .card{
+      background: rgba(255,255,255,.02);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .hero{
+      padding: 18px 18px 6px;
+      background: linear-gradient(180deg, rgba(122,162,255,.12), transparent 55%);
+      border-bottom: 1px solid var(--line);
+    }
+    .hero h2{
+      margin:0;
+      font-size: 26px;
+      letter-spacing: .2px;
+    }
+    .meta{
+      display:flex; flex-wrap:wrap; gap:10px; margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .pill{
+      padding: 6px 10px;
+      border:1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.02);
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns: 260px 1fr;
+      gap: 16px;
+      padding: 16px;
+    }
+    @media (max-width: 900px){
+      .layout{grid-template-columns: 1fr}
+    }
+    nav{
+      position: sticky;
+      top: 14px;
+      align-self: start;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 12px;
+      background: rgba(255,255,255,.02);
+    }
+    nav h3{
+      margin: 0 0 10px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--muted);
+    }
+    nav a{
+      display:block;
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: var(--text);
+      border:1px solid transparent;
+    }
+    nav a:hover{
+      background: rgba(122,162,255,.10);
+      border-color: rgba(122,162,255,.20);
+      text-decoration:none;
+    }
+    main{
+      padding: 2px 4px 14px;
+    }
+    section{
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    section:last-child{border-bottom:none}
+    h3{
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: .2px;
+    }
+    p{margin: 10px 0; color: var(--text)}
+    ul{margin: 8px 0 10px 18px; color: var(--text)}
+    li{margin: 6px 0}
+    .muted{color: var(--muted)}
+    .note{
+      border:1px solid rgba(122,162,255,.25);
+      background: rgba(122,162,255,.08);
+      border-radius: 14px;
+      padding: 12px 12px;
+      margin: 12px 0 2px;
+    }
+    code, .code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      background: var(--code);
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      border-radius: 10px;
+      font-size: .95em;
+    }
+    footer{
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align:center;
+    }
+    .small{font-size: 13px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="title">
+          <h1>Vend App</h1>
+          <p class="muted">Privacy Policy</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn" onclick="window.print()" aria-label="Print this privacy policy">
+          🖨️ <span class="small">Print</span>
+        </button>
+        <a class="btn" href="#contact" aria-label="Jump to contact section">
+          ✉️ <span class="small">Contact</span>
+        </a>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="hero">
+        <h2>Privacy Policy</h2>
+        <div class="meta">
+          <span class="pill"><strong>Effective:</strong> <span>3 March 2026</span></span>
+          <span class="pill"><strong>Last Updated:</strong> <span>3 March 2026</span></span>
+          <span class="pill"><strong>Company:</strong> <span>Vend Pty Ltd</span></span>
+        </div>
+        <p class="muted" style="margin-top:12px">
+          This page describes how Vend collects, uses, shares, and protects information when you use the Vend mobile app and related services.
+        </p>
+      </div>
+
+      <div class="layout">
+        <nav aria-label="Table of contents">
+          <h3>On this page</h3>
+          <a href="#intro">1. Introduction</a>
+          <a href="#collect">2. Information We Collect</a>
+          <a href="#use">3. How We Use Information</a>
+          <a href="#legal-bases">4. Legal Bases (GDPR)</a>
+          <a href="#sharing">5. Sharing of Information</a>
+          <a href="#transfers">6. International Transfers</a>
+          <a href="#retention">7. Data Retention</a>
+          <a href="#rights">8. Your Rights</a>
+          <a href="#california">9. California Privacy</a>
+          <a href="#children">10. Children’s Privacy</a>
+          <a href="#security">11. Security</a>
+          <a href="#third-party">12. Third-Party Services</a>
+          <a href="#stores">13. App Store & Google Play</a>
+          <a href="#changes">14. Changes</a>
+          <a href="#contact">15. Contact</a>
+        </nav>
+
+        <main>
+          <section id="intro">
+            <h3>1. Introduction</h3>
+            <p>
+              Vend Pty Ltd (“Vend”, “we”, “our”, “us”) operates the Vend mobile application and related services (the “App” or “Services”).
+              Vend is a digital payments and autonomous commerce platform that may enable users to interact with tokenized loyalty systems, digital wallets,
+              on-chain infrastructure, and participating merchants.
+            </p>
+            <p class="muted">
+              We are committed to protecting your privacy and complying with applicable global privacy laws, including the GDPR (EU/UK),
+              the Australian Privacy Act 1988, and the CCPA/CPRA (California), among others.
+            </p>
+          </section>
+
+          <section id="collect">
+            <h3>2. Information We Collect</h3>
+            <p>We collect only information that is necessary to operate and improve the Services.</p>
+
+            <p><strong>A. Information you provide</strong></p>
+            <ul>
+              <li>Full name</li>
+              <li>Email address</li>
+              <li>Phone number</li>
+              <li>Date of birth (if required for compliance)</li>
+              <li>Government ID (for KYC/AML compliance where applicable)</li>
+              <li>Payment or wallet details</li>
+              <li>Communications with us</li>
+            </ul>
+
+            <p><strong>B. Automatically collected information</strong></p>
+            <ul>
+              <li>Device type and operating system</li>
+              <li>IP address</li>
+              <li>App version</li>
+              <li>Usage data (feature interactions)</li>
+              <li>Crash logs and diagnostics</li>
+              <li>Approximate location (if enabled)</li>
+            </ul>
+
+            <p class="note">
+              Vend does <strong>not</strong> collect precise GPS location unless you explicitly enable it and your device permissions allow it.
+            </p>
+
+            <p><strong>C. Blockchain & transaction data</strong></p>
+            <p class="muted">
+              Because Vend may integrate blockchain infrastructure, some information may be recorded on public blockchains, including public wallet addresses,
+              transaction hashes, and smart contract interactions. Blockchain data is inherently public and may be permanent.
+            </p>
+          </section>
+
+          <section id="use">
+            <h3>3. How We Use Your Information</h3>
+            <p>We use data to:</p>
+            <ul>
+              <li>Provide and operate the App and Services</li>
+              <li>Process payments and digital asset transactions</li>
+              <li>Verify identity (where legally required)</li>
+              <li>Prevent fraud and financial crime</li>
+              <li>Provide customer support</li>
+              <li>Improve product performance and reliability</li>
+              <li>Comply with legal obligations</li>
+              <li>Send service-related notifications</li>
+            </ul>
+            <p class="note"><strong>We do not sell personal data.</strong></p>
+          </section>
+
+          <section id="legal-bases">
+            <h3>4. Legal Bases for Processing (GDPR)</h3>
+            <p class="muted">
+              For users in the EU/UK, we process personal data under one or more of these legal bases:
+            </p>
+            <ul>
+              <li><strong>Contractual necessity</strong> (to provide Services you request)</li>
+              <li><strong>Legal obligation</strong> (e.g., compliance, KYC/AML where applicable)</li>
+              <li><strong>Legitimate interests</strong> (e.g., fraud prevention, security, improving Services)</li>
+              <li><strong>Consent</strong> (where required; you may withdraw at any time)</li>
+            </ul>
+          </section>
+
+          <section id="sharing">
+            <h3>5. Sharing of Information</h3>
+
+            <p><strong>A. Service providers</strong></p>
+            <p class="muted">We may share data with vendors who help us operate the Services, such as:</p>
+            <ul>
+              <li>Cloud hosting providers</li>
+              <li>Identity verification providers</li>
+              <li>Payment processors</li>
+              <li>Analytics providers</li>
+              <li>Blockchain infrastructure partners</li>
+            </ul>
+            <p class="muted">Service providers are contractually required to protect your information.</p>
+
+            <p><strong>B. Legal & regulatory authorities</strong></p>
+            <p class="muted">
+              We may disclose information if required by law, court order, subpoena, or to comply with applicable regulations (including AML/KYC where applicable).
+            </p>
+
+            <p><strong>C. Business transfers</strong></p>
+            <p class="muted">
+              If we are involved in a merger, acquisition, reorganization, or sale of assets, information may be transferred as part of that transaction.
+            </p>
+          </section>
+
+          <section id="transfers">
+            <h3>6. International Transfers</h3>
+            <p class="muted">
+              Your data may be transferred and processed in countries outside your jurisdiction. Where required, we implement safeguards such as
+              Standard Contractual Clauses (SCCs), adequacy decisions, or equivalent legal mechanisms.
+            </p>
+          </section>
+
+          <section id="retention">
+            <h3>7. Data Retention</h3>
+            <p class="muted">
+              We retain personal data only as long as necessary to provide the Services, comply with legal and regulatory obligations, resolve disputes,
+              and enforce our agreements.
+            </p>
+            <p class="note">
+              Blockchain transaction data may not be erasable due to decentralized network design.
+            </p>
+          </section>
+
+          <section id="rights">
+            <h3>8. Your Privacy Rights</h3>
+            <p class="muted">
+              Depending on your jurisdiction, you may have rights to access, correct, delete, restrict processing, object, and request portability of your data,
+              as well as withdraw consent where applicable.
+            </p>
+            <p>
+              To exercise your rights, contact us at <span class="code">privacy@vendmoney.com</span>. We may verify your identity before processing requests.
+            </p>
+          </section>
+
+          <section id="california">
+            <h3>9. California Privacy Rights (CCPA/CPRA)</h3>
+            <p class="muted">
+              California residents may have the right to know what personal information is collected, request deletion, correct inaccurate information,
+              limit certain uses of sensitive personal information, and opt out of sale/sharing.
+            </p>
+            <p class="note"><strong>Vend does not sell personal information.</strong></p>
+          </section>
+
+          <section id="children">
+            <h3>10. Children’s Privacy</h3>
+            <p class="muted">
+              Vend is not intended for individuals under 18 years of age. We do not knowingly collect data from minors. If we learn we have collected
+              such data, we will delete it promptly.
+            </p>
+          </section>
+
+          <section id="security">
+            <h3>11. Security</h3>
+            <p class="muted">
+              We implement appropriate technical and organizational measures, which may include encryption in transit (TLS/SSL), encrypted storage where appropriate,
+              access controls, secure cloud infrastructure, and multi-factor authentication for sensitive systems. No method of transmission or storage is 100% secure.
+            </p>
+          </section>
+
+          <section id="third-party">
+            <h3>12. Third-Party Services</h3>
+            <p class="muted">
+              The App may integrate third-party services (e.g., blockchain networks, wallet providers, payment processors, analytics providers).
+              These parties have their own privacy policies, and their practices are not controlled by Vend.
+            </p>
+          </section>
+
+          <section id="stores">
+            <h3>13. App Store & Google Play Compliance</h3>
+            <p class="muted">
+              Vend aims to disclose applicable data collection and usage in the Apple App Store privacy labels and Google Play Data Safety section.
+              Vend does not track users across third-party apps for advertising without consent.
+            </p>
+          </section>
+
+          <section id="changes">
+            <h3>14. Changes to This Policy</h3>
+            <p class="muted">
+              We may update this Privacy Policy from time to time. Material changes will be communicated via in-app notice, email (where appropriate),
+              and/or an updated policy posted to this page.
+            </p>
+          </section>
+
+          <section id="contact">
+            <h3>15. Contact Information</h3>
+            <p>
+              <strong>Vend Money Pty Ltd</strong><br />
+              <span class="muted">[Registered Address]</span><br />
+              <span class="muted">Melbourne, Victoria, Australia</span>
+            </p>
+            <p>
+              Email: <a href="mailto:privacy@vendmoney.com">privacy@vendmoney.com</a><br />
+              Website: <a href="https://vendmoney.com" target="_blank" rel="noreferrer">vendmoney.com</a>
+            </p>
+
+            <div class="note">
+              <strong>Implementation checklist</strong>
+              <ul>
+                <li>Replace placeholders: <span class="code">3 March 2026</span>, <span class="code">Unit 2A 17/F, Glenealy Tower No.1, Glenealy, Central Hong Kong</span></li>
+                <li>Confirm whether you collect precise location, run KYC, and use analytics/SDKs</li>
+                <li>Link this page in your app (Settings → Privacy Policy) and in store listings</li>
+              </ul>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Vend Money Pty Ltd. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
